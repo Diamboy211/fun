@@ -1,6 +1,12 @@
 var clickss = 0
 
 function c() {
-  clickss++;
-  document.getElementById(c).textContent = clickss
+  clickss += 1
 }
+
+function loops() {
+  document.GetElementById("c").textContent = clickss;
+  loops()
+}
+
+loops()
