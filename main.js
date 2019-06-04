@@ -1,6 +1,6 @@
 var clickss = 0
 
 function c() {
-  clickss++
+  clickss++;
   document.getElementById(c).textContent = clickss
 }
