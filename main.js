@@ -6,7 +6,6 @@ function c() {
 
 function loops() {
   document.GetElementById("c").textContent = "   " + clickss;
-  loops()
 }
 
-loops()
+setInterval(loops, 50)
