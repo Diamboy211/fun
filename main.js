@@ -2,10 +2,5 @@ var clickss = 0
 
 function c() {
   clickss += 1
+  document.getElementById("c").textContent = "   " + clickss
 }
-
-function loops() {
-  document.GetElementById("c").textContent = "   " + clickss;
-}
-
-setInterval(loops, 50)
