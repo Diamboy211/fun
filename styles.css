@@ -1,0 +1,15 @@
+table {
+    border: 10px;
+    border-color: #000000;
+    border-collapse: collapse;
+    margin: 10px;
+}
+
+td,th {
+    border: solid 2px #000000;
+    margin: 10px;
+}
+
+#speed:hover {
+    color: #777777
+}

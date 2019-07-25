@@ -1,10 +1,70 @@
-<html>
-  <head>
-    <title>fun game</title>
-    <script src="main.js"></script>
-  </head>
-  <body>
-    <button onclick="c()">click</button>
-    <div id="c">0</div>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>fun</title>
+</head>
+<body>
+    <button onclick="playSave(1)">play save 1</button>
+    <button onclick="playSave(2)">play save 2</button>
+    <button onclick="playSave(3)">play save 3</button>
+    <button onclick="playSave(4)">play save 4</button>
+    <button onclick="playSave(5)">play save 5</button>
+    <button onclick="save()">save game</button>
+    <p> </p>
+    <button onclick="sellSave(1)">sell save 1</button>
+    <button onclick="sellSave(2)">sell save 2</button>
+    <button onclick="sellSave(3)">sell save 3</button>
+    <button onclick="sellSave(4)">sell save 4</button>
+    <button onclick="sellSave(5)">sell save 5</button>
+    <button onclick="hardReset()">hard reset game</button>
+    <div id="money">you have $0</div>
+    <div id="trust"></div>
+    <div id="speed" onclick="buySpeed()"></div>
+    <table>
+        <tr>
+            <th></th>
+            <th>Save 1</th>
+            <th>Save 2</th>
+            <th>Save 3</th>
+            <th>Save 4</th>
+            <th>Save 5</th>
+        </tr>
+        <tr>
+            <th>Playing</th>
+            <th id="playing1">O</th>
+            <th id="playing2"></th>
+            <th id="playing3"></th>
+            <th id="playing4"></th>
+            <th id="playing5"></th>
+        </tr>
+        <tr>
+            <td>Quantums</td>
+            <td id="quantums1">0</td>
+            <td id="quantums2">0</td>
+            <td id="quantums3">0</td>
+            <td id="quantums4">0</td>
+            <td id="quantums5">0</td>
+        </tr>
+        <tr>
+            <td>Unstable Quarks</td>
+            <td id="uq1">0</td>
+            <td id="uq2">0</td>
+            <td id="uq3">0</td>
+            <td id="uq4">0</td>
+            <td id="uq5">0</td>
+        </tr>
+        <tr>
+            <td>Worth</td>
+            <td id="worth1">$0</td>
+            <td id="worth2">$0</td>
+            <td id="worth3">$0</td>
+            <td id="worth4">$0</td>
+            <td id="worth5">$0</td>
+        </tr>
+    </table>
+</body>
+<script src="main.js"></script>
 </html>
