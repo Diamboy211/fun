@@ -99,9 +99,13 @@ function save() {
 }
 
 function load() {
-	let p = JSON.parse(window.localStorage.getItem("save-fun"))
-	player = p
-	window.localStorage.setItem("save-fun", JSON.stringify(player))
+	if (window.localStorage.getItem("save-fun") = null) {
+		hardReset()
+	} else {
+		let p = JSON.parse(window.localStorage.getItem("save-fun"))
+		player = p
+		window.localStorage.setItem("save-fun", JSON.stringify(player))
+	}
 }
 
 function hardReset() {
