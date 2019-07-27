@@ -99,7 +99,7 @@ function save() {
 }
 
 function load() {
-	if (window.localStorage.getItem("save-fun") = null) {
+	if (window.localStorage.getItem("save-fun") === null) {
 		hardReset()
 	} else {
 		let p = JSON.parse(window.localStorage.getItem("save-fun"))
